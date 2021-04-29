@@ -1,0 +1,94 @@
+#NavBar {
+  width: 100%;
+  height: 10rem;
+  background-color: #0147a6ff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 0 1.5rem 0;
+}
+#NavBar div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#NavBar div img {
+  width: 23rem;
+  display: block;
+}
+#NavBar ul {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+#NavBar ul li {
+  align-self: center;
+}
+#NavBar ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+#NavBar span {
+  display: none;
+}
+#NavBar span img {
+  width: 3rem;
+}
+
+@media (max-width: 380px) {
+  #NavBar {
+    position: fixed;
+    justify-content: space-between;
+  }
+  #NavBar .showHideMenu {
+    left: 0rem;
+    transition: 1s;
+  }
+  #NavBar div {
+    width: 50%;
+  }
+  #NavBar ul {
+    width: 100%;
+    flex-direction: column;
+    left: -80rem;
+    top: 13rem;
+    position: absolute;
+    background-color: #ff96b2ff;
+    transition: 1s;
+  }
+  #NavBar ul li {
+    margin: 4rem 0rem 4rem 0rem;
+  }
+  #NavBar ul li a {
+    font-size: 2.5rem;
+    color: #ddd9d6ff;
+  }
+  #NavBar span {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+  #NavBar span img {
+    align-self: center;
+    width: 5rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+}
+
+@media (max-width: 380px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
