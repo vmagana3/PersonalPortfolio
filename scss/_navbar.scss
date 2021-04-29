@@ -1,0 +1,24 @@
+@import 'colors';
+#NavBar{
+    display: flex;
+    background-color:$cobaltBlue;
+    width: 100%;
+    height: 10rem;
+    div{
+        width: 50%;        
+    }
+    ul{
+        width: 50%; 
+        list-style: none;  
+        display: flex;
+        justify-content: space-around;
+        li{
+            align-self: center;                                   
+            a{
+                font-size: 1.7rem;                
+                text-decoration: none;
+                color: $white;                
+            }
+        }           
+    }    
+}
