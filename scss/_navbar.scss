@@ -1,24 +1,82 @@
 @import 'colors';
+//Desktop Styles//
 #NavBar{
-    display: flex;
-    background-color:$cobaltBlue;
     width: 100%;
     height: 10rem;
-    div{
-        width: 50%;        
-    }
-    ul{
-        width: 50%; 
-        list-style: none;  
+    background-color: $cobaltBlue; 
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0 1.5rem 0;    
+    div{                
+        width: 20%;  
+        display: flex;         
+        align-items: center;
+        justify-content: space-around;             
+        img{                                                                       
+            width: 23rem;            
+            display: block;            
+        }                
+    }   
+    ul{               
+        width: 40%;        
         display: flex;
         justify-content: space-around;
+        list-style: none;
         li{
-            align-self: center;                                   
+            align-self: center;
             a{
-                font-size: 1.7rem;                
+                font-size: 1.5rem;
                 text-decoration: none;
-                color: $white;                
+                color: $white;
             }
-        }           
-    }    
+        }                        
+    } 
+    span{
+        display: none;
+        img{
+            width: 3rem;
+        }        
+    }
+}
+
+
+
+//Mobile Styles//
+@media(max-width:380px){
+    #NavBar{  
+        position: fixed;
+        .showHideMenu{            
+            left: 0rem;  
+            transition:1s;        
+        }        
+        justify-content: space-between;
+        div{
+            width: 50%;            
+        }
+        ul{      
+            width: 100%;            
+            flex-direction: column;
+            left: -80rem;
+            top: 13rem;                  
+            position: absolute;
+            background-color:$bakerMillerPink; 
+            transition: 1s;
+            li{
+                margin:4rem 0rem 4rem 0rem;
+                a{
+                    font-size:2.5rem;
+                    color: $timberwolf;
+                }
+            }                                
+        }
+        span{
+            width: 20%;                        
+            display: flex;
+            justify-content:center;
+            img{         
+                align-self: center;       
+                width: 5rem;
+            }        
+        }
+    }
 }
