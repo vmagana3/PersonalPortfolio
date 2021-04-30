@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: space-around;             
         img{                                                                       
-            width: 23rem;            
+            width: 17rem;            
             display: block;            
         }                
     }   
@@ -44,7 +44,7 @@
 //Mobile Styles//
 @media(max-width:380px){
     #NavBar{  
-        position: fixed;
+        position: sticky;
         .showHideMenu{            
             left: 0rem;  
             transition:1s;        
@@ -53,7 +53,7 @@
         div{
             width: 50%;            
         }
-        ul{      
+        ul{                  
             width: 100%;            
             flex-direction: column;
             left: -80rem;
