@@ -13,7 +13,7 @@
   justify-content: space-around;
 }
 #NavBar div img {
-  width: 23rem;
+  width: 17rem;
   display: block;
 }
 #NavBar ul {
@@ -39,7 +39,7 @@
 
 @media (max-width: 380px) {
   #NavBar {
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
   }
   #NavBar .showHideMenu {
@@ -73,6 +73,84 @@
   #NavBar span img {
     align-self: center;
     width: 5rem;
+  }
+}
+#MainSection {
+  width: 100%;
+  height: auto;
+  padding: 9rem 0rem 9rem 0rem;
+  background-color: #0147a6ff;
+}
+#MainSection #mainContainer {
+  display: flex;
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+#MainSection #mainContainer .contentMain {
+  width: 90%;
+  margin: auto;
+}
+#MainSection #mainContainer .contentMain p {
+  color: #ffffff;
+}
+#MainSection #mainContainer .contentMain .Name {
+  font-size: 6.5rem;
+  font-weight: 700;
+}
+#MainSection #mainContainer .contentMain .Position {
+  font-size: 3.5rem;
+}
+#MainSection #mainContainer .contentMain .Phrase {
+  font-size: 2.5rem;
+  font-style: italic;
+}
+#MainSection #mainContainer .contentMain button {
+  width: 26%;
+  height: 4rem;
+  margin-top: 1.5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: #ff96b2ff;
+  color: #ffffff;
+  cursor: pointer;
+}
+#MainSection #mainContainer .contentMain img {
+  display: block;
+  margin: auto;
+  width: 45%;
+  height: 100%;
+}
+
+@media (max-width: 380px) {
+  #MainSection {
+    width: 100%;
+  }
+  #MainSection #mainContainer {
+    width: 100%;
+    flex-direction: column;
+  }
+  #MainSection #mainContainer .contentMain {
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+  }
+  #MainSection #mainContainer .contentMain .Name {
+    font-size: 8rem;
+    font-weight: 700;
+  }
+  #MainSection #mainContainer .contentMain .Position {
+    font-size: 4.5rem;
+  }
+  #MainSection #mainContainer .contentMain .Phrase {
+    font-size: 3.5rem;
+    font-style: italic;
+  }
+  #MainSection #mainContainer .contentMain button {
+    width: 80%;
+    height: 8rem;
+    font-size: 4rem;
+    margin-top: 10rem;
   }
 }
 * {

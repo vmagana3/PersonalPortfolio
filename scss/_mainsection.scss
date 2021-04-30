@@ -1,0 +1,82 @@
+@import 'colors';
+//Desktop Styles//
+#MainSection{
+    width: 100%;
+    height: auto;
+    padding:9rem 0rem 9rem 0rem;
+    background-color: $cobaltBlue;
+    #mainContainer{
+        display: flex;        
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        .contentMain{
+            width: 90%;  
+            margin: auto;                                                            
+            p{                
+                color: $white;                                
+            }                
+            .Name{
+                font-size: 6.5rem;
+                font-weight: 700;                
+            }   
+            .Position{
+                font-size: 3.5rem;
+            }
+            .Phrase{
+                font-size: 2.5rem;
+                font-style: italic;
+            }
+            button{
+                width: 26%;
+                height: 4rem;
+                margin-top: 1.5rem;
+                border: none; 
+                font-size: 1.5rem;  
+                font-weight: 600;  
+                background-color: $bakerMillerPink;
+                color: $white;   
+                cursor: pointer;        
+            }
+            img{
+                display: block;
+                margin: auto;
+                width: 45%;
+                height: 100%;                
+            }
+        }
+    }
+}
+
+//Mobile Styles//
+@media(max-width:380px){
+    #MainSection{
+        width: 100%;                                      
+        #mainContainer{                                                            
+            width: 100%;            
+            flex-direction: column;            
+            .contentMain{                
+                text-align: center; 
+                padding: 5rem 0 5rem 0;                                               
+                .Name{
+                    font-size: 8rem;
+                    font-weight: 700;                
+                }
+                .Position{
+                    font-size: 4.5rem;
+                }
+                .Phrase{
+                    font-size: 3.5rem;
+                    font-style: italic;
+                }
+                button{
+                    width: 80%;
+                    height: 8rem;
+                    font-size: 4rem;
+                    margin-top: 10rem;
+                }
+            }              
+        }
+    }
+}
+
