@@ -1,0 +1,51 @@
+@import 'colors';
+
+#ProjectsSection{
+    width: 100%;
+    height: auto;    
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0rem 5rem 0rem;        
+    p{                   
+        font-weight: 300;
+        font-size: 4rem;        
+        padding: 0rem 10rem 0rem 10rem; 
+        margin-bottom: 3rem;
+    }
+    .gridProjects{        
+        width: 100%;      
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+        padding: 0rem 10rem 0rem 10rem;
+        .itemGrid{            
+            img{                
+                width: 100%;
+                border-radius: 1rem;
+            }                                                 
+        }
+        .itemGrid:hover{
+            transform: scale(1.1);
+            transition: 2s;            
+        }       
+    }                   
+}
+
+@media(max-width:380px){
+    #ProjectsSection{        
+        p{                               
+            font-size: 8rem;                                
+            text-align: center;            
+        } 
+        .gridProjects{        
+            width: 100%;                  
+            grid-template-columns: 1fr;                                  
+            .itemGrid{            
+                img{                
+                    width: 100%;
+                    border-radius: 2rem;
+                }                                                 
+            }                  
+        }      
+    }        
+}
