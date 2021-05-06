@@ -6,7 +6,9 @@
     background-color: $cobaltBlue; 
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 0 1.5rem 0;    
+    padding: 1.5rem 0 1.5rem 0;  
+    position: sticky;
+    top: 0;       
     div{                
         width: 20%;  
         display: flex;         
