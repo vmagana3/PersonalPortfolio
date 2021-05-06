@@ -12,14 +12,15 @@
         padding: 0rem 10rem 0rem 10rem; 
         margin-bottom: 3rem;
     }
-    .gridProjects{        
-        width: 100%;      
+    .gridProjects{
+        margin: auto;            
+        width: 87%;      
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 4rem;
-        padding: 0rem 10rem 0rem 10rem;
+        gap: 4rem;        
         .itemGrid{            
-            img{                
+            img{   
+                background-color: red;             
                 width: 100%;
                 border-radius: 1rem;
             }                                                 
@@ -38,7 +39,7 @@
             text-align: center;            
         } 
         .gridProjects{        
-            width: 100%;                  
+            width: 85%;                  
             grid-template-columns: 1fr;                                  
             .itemGrid{            
                 img{                
