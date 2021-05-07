@@ -19,14 +19,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;                                  
-            .imgProfile{
+            .imgProfile{                                                     
                 width: 15rem;
                 height: 15rem;
                 border-radius: 50%;                                                
                 img{
                     width: 100%;
                 }
-            }            
+            }                                   
             p{                
                 font-size: 2rem;
                 font-weight: 300;                   
@@ -68,7 +68,55 @@
                 img{
                     width: 3.6rem;
                 }
+                img:hover{
+                    transform: rotate(10deg);                                        
+                    transition: 0.3s;
+                }
             }      
         }
     }
+}
+
+//Mobile Styles//
+@media(max-width:380px){
+    #AboutMe{                    
+        .cardContent{            
+            height: auto;            
+            border-radius: 2rem;
+            flex-direction: column;                                                       
+            .leftContent{
+                width: 100%;                                                                
+                border-bottom: 5px solid $bakerMillerPink;
+                border-right: none; 
+                padding: 5rem 0rem 5rem 0rem;                                                                  
+                .imgProfile{                                                     
+                    width: 20rem;
+                    height: 20rem;                                                                                       
+                }                                   
+                p{                
+                    font-size: 3rem;                                                                                   
+                }   
+                .pBold{
+                    font-size: 6rem;                    
+                }      
+            }
+            .rightContent{
+                width: 100%;                                                                
+                p{
+                    width: 70%;                                   
+                    font-size: 2.5rem;                                                                                            
+                }  
+                .pBold{
+                    font-size: 6rem;                    
+                } 
+                div{                    
+                    align-items: center;                                                                                                  
+                    img{
+                        margin: 2rem 0rem 3rem 0rem;
+                        width: 5rem;
+                    }                    
+                }      
+            }
+        }
+    }    
 }

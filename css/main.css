@@ -273,7 +273,51 @@
 #AboutMe .cardContent .rightContent div img {
   width: 3.6rem;
 }
+#AboutMe .cardContent .rightContent div img:hover {
+  transform: rotate(10deg);
+  transition: 0.3s;
+}
 
+@media (max-width: 380px) {
+  #AboutMe .cardContent {
+    height: auto;
+    border-radius: 2rem;
+    flex-direction: column;
+  }
+  #AboutMe .cardContent .leftContent {
+    width: 100%;
+    border-bottom: 5px solid #ff96b2ff;
+    border-right: none;
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  #AboutMe .cardContent .leftContent .imgProfile {
+    width: 20rem;
+    height: 20rem;
+  }
+  #AboutMe .cardContent .leftContent p {
+    font-size: 3rem;
+  }
+  #AboutMe .cardContent .leftContent .pBold {
+    font-size: 6rem;
+  }
+  #AboutMe .cardContent .rightContent {
+    width: 100%;
+  }
+  #AboutMe .cardContent .rightContent p {
+    width: 70%;
+    font-size: 2.5rem;
+  }
+  #AboutMe .cardContent .rightContent .pBold {
+    font-size: 6rem;
+  }
+  #AboutMe .cardContent .rightContent div {
+    align-items: center;
+  }
+  #AboutMe .cardContent .rightContent div img {
+    margin: 2rem 0rem 3rem 0rem;
+    width: 5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
