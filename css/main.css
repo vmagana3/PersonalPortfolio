@@ -160,7 +160,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 5rem 0rem 5rem 0rem;
+  margin: 15rem 0rem 15rem 0rem;
 }
 #ProjectsSection p {
   font-weight: 300;
@@ -176,7 +176,7 @@
   gap: 4rem;
 }
 #ProjectsSection .gridProjects .itemGrid img {
-  background-color: red;
+  box-shadow: 0px 0px 50px -7px rgba(112, 112, 112, 0.79);
   width: 100%;
   border-radius: 1rem;
 }
@@ -199,6 +199,81 @@
     border-radius: 2rem;
   }
 }
+#AboutMe {
+  width: 100%;
+  height: auto;
+  margin: 15rem 0rem 15rem 0rem;
+}
+#AboutMe .cardContent {
+  width: 80%;
+  height: 40rem;
+  margin: auto;
+  border-radius: 1rem;
+  display: flex;
+  background-color: #00162dff;
+  box-shadow: 0px 0px 50px -7px rgba(112, 112, 112, 0.79);
+}
+#AboutMe .cardContent .leftContent {
+  width: 30%;
+  height: 100%;
+  border-radius: 1rem 0rem 0rem 1rem;
+  border-right: 10px solid #ff96b2ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#AboutMe .cardContent .leftContent .imgProfile {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+#AboutMe .cardContent .leftContent .imgProfile img {
+  width: 100%;
+}
+#AboutMe .cardContent .leftContent p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+#AboutMe .cardContent .leftContent .pBold {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Itim", cursive;
+}
+#AboutMe .cardContent .rightContent {
+  width: 70%;
+  height: 100%;
+  border-radius: 0rem 1rem 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#AboutMe .cardContent .rightContent p {
+  width: 70%;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 3rem;
+}
+#AboutMe .cardContent .rightContent .pBold {
+  font-size: 4rem;
+  font-weight: 400;
+  font-family: "Itim", cursive;
+}
+#AboutMe .cardContent .rightContent div {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+#AboutMe .cardContent .rightContent div img {
+  width: 3.6rem;
+}
+
 * {
   margin: 0;
   padding: 0;
