@@ -1,0 +1,98 @@
+#Schooling{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;          
+    .schoolingContainer{
+        width: 80%;
+        height: 55rem;
+        margin: auto;
+        display: flex;
+        padding: 3rem 0rem 3rem 0rem;
+        flex-direction: column;
+        justify-content: space-between;                
+        .schoolingCard{
+            width: 100%;
+            height: auto;            
+            border-radius: 1rem;
+            display: flex; 
+            justify-content: space-around;           
+            background-color: $oxfordBlue; 
+            box-shadow: 0px 0px 50px -7px rgba(112,112,112,0.79);               
+            color: $white;
+            .schoolingText{                
+                width: 70%;
+                padding: 3rem 0rem 3rem 0rem;
+                .schoolName{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1.5rem;
+                    width:60%;
+                    border-bottom: 1px solid $bakerMillerPink;
+                }  
+                .degreeName{
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }   
+                li{
+                    font-size: 1.5rem;
+                    font-weight: 200;   
+                    list-style: none;                                                       
+                }                                   
+            }
+            .schoolingImage{
+                width: 20%;      
+                display: flex;                                                                         
+                img{                    
+                    margin: auto;                                        
+                    width: 50%;                    
+                }
+            }
+        }       
+    }
+}
+
+@media(max-width:380px){
+    #Schooling{                        
+        .schoolingContainer{            
+            height: 100rem;                                                                           
+            .schoolingCard{                                           
+                border-radius: 2rem;                
+                flex-direction:column-reverse;
+                justify-content: space-evenly;                
+                padding: 5rem 0rem 5rem 0rem; 
+                margin: 5rem 0rem 5rem 0rem;                                                        
+                .schoolingText{ 
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;               
+                    width: 100%; 
+                    margin-top: 3rem;                                                                              
+                    .schoolName{
+                        font-size: 4rem;                                                
+                        width:90%;     
+                        text-align: center;                   
+                    }  
+                    .degreeName{
+                        width: 90%;
+                        font-size: 3rem;
+                        text-align: center;                        
+                    }   
+                    li{
+                        width: 90%;
+                        font-size: 2.5rem;                          
+                        list-style: none; 
+                        text-align: center;                                                      
+                    }                                   
+                }
+                .schoolingImage{
+                    width: 100%;      
+                    display: flex;                                                                                                                
+                    img{                    
+                        margin: auto;                                        
+                        width: 50%;                    
+                    }
+                }
+            }       
+        }
+    }    
+}

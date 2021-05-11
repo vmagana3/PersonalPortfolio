@@ -318,6 +318,102 @@
     width: 5rem;
   }
 }
+#Schooling {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+}
+#Schooling .schoolingContainer {
+  width: 80%;
+  height: 55rem;
+  margin: auto;
+  display: flex;
+  padding: 3rem 0rem 3rem 0rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#Schooling .schoolingContainer .schoolingCard {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00162dff;
+  box-shadow: 0px 0px 50px -7px rgba(112, 112, 112, 0.79);
+  color: #ffffff;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingText {
+  width: 70%;
+  padding: 3rem 0rem 3rem 0rem;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingText .schoolName {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  width: 60%;
+  border-bottom: 1px solid #ff96b2ff;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingText .degreeName {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingText li {
+  font-size: 1.5rem;
+  font-weight: 200;
+  list-style: none;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingImage {
+  width: 20%;
+  display: flex;
+}
+#Schooling .schoolingContainer .schoolingCard .schoolingImage img {
+  margin: auto;
+  width: 50%;
+}
+
+@media (max-width: 380px) {
+  #Schooling .schoolingContainer {
+    height: 100rem;
+  }
+  #Schooling .schoolingContainer .schoolingCard {
+    border-radius: 2rem;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    padding: 5rem 0rem 5rem 0rem;
+    margin: 5rem 0rem 5rem 0rem;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingText .schoolName {
+    font-size: 4rem;
+    width: 90%;
+    text-align: center;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingText .degreeName {
+    width: 90%;
+    font-size: 3rem;
+    text-align: center;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingText li {
+    width: 90%;
+    font-size: 2.5rem;
+    list-style: none;
+    text-align: center;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingImage {
+    width: 100%;
+    display: flex;
+  }
+  #Schooling .schoolingContainer .schoolingCard .schoolingImage img {
+    margin: auto;
+    width: 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
