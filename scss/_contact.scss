@@ -1,8 +1,8 @@
-#ContactMe{
+#ContactMe{      
     width: 100%;
     height: auto;      
     .contactForm{
-        width: 55%;
+        width: 60%;
         height: 55rem;        
         display: flex;
         margin: 10rem auto 10rem auto;                         
@@ -44,7 +44,7 @@
                 justify-content: space-around;
                 margin: auto;
                 padding: 0.5rem;                
-                border-radius: 1rem;
+                border-radius: 0.6rem;
                 background-color: $white;
                 img{                    
                     width: 7%;   
@@ -83,7 +83,8 @@
 }
 
 @media(max-width:380px){
-    #ContactMe{                   
+    #ContactMe{  
+                    
         .contactForm{
             width: 80%;
             height: 120rem;        

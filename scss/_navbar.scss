@@ -25,13 +25,26 @@
         justify-content: space-around;
         list-style: none;
         li{
-            align-self: center;
+            align-self: center;                          
+            padding: 1rem;                            
             a{
                 font-size: 1.5rem;
                 text-decoration: none;
-                color: $white;
-            }
-        }                        
+                color: $white;                
+            } 
+        }   
+        
+        li:hover{
+            a{
+                color: $oxfordBlue;
+            }            
+            background-color: $yellow;            
+            transform: translate(5%);
+            border-radius: 0.5rem;
+            transition: 1s;
+        }
+       
+                                               
     } 
     span{
         display: none;

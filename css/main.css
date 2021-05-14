@@ -26,11 +26,21 @@
 }
 #NavBar ul li {
   align-self: center;
+  padding: 1rem;
 }
 #NavBar ul li a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #ffffff;
+}
+#NavBar ul li:hover {
+  background-color: #EDC951;
+  transform: translate(5%);
+  border-radius: 0.5rem;
+  transition: 1s;
+}
+#NavBar ul li:hover a {
+  color: #00162dff;
 }
 #NavBar span {
   display: none;
@@ -419,7 +429,7 @@
   height: auto;
 }
 #ContactMe .contactForm {
-  width: 55%;
+  width: 60%;
   height: 55rem;
   display: flex;
   margin: 10rem auto 10rem auto;
@@ -463,7 +473,7 @@
   justify-content: space-around;
   margin: auto;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   background-color: #ffffff;
 }
 #ContactMe .contactForm .inputs .inputContainer img {
@@ -522,6 +532,115 @@
     height: 5%;
     border-radius: 1rem;
     font-size: 2.5rem;
+  }
+}
+.waveFooter img {
+  transform: rotate(180deg);
+  display: block;
+  margin-top: 30rem;
+}
+
+#footer {
+  width: 100%;
+  height: 20rem;
+  padding-top: 3rem;
+  background-color: #0147a6ff;
+}
+#footer .location {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer .location .socialNetworks {
+  padding-top: 3%;
+  width: 15%;
+}
+#footer .location .socialNetworks p {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+#footer .location .socialNetworks div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+#footer .location .socialNetworks div img {
+  width: 15%;
+}
+#footer .location .items {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+}
+#footer .location .items .contactItem {
+  padding-top: 4.5%;
+  width: 20%;
+}
+#footer .location .items .contactItem img {
+  width: 3rem;
+  display: block;
+  margin: auto;
+}
+#footer .location .items .contactItem p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+#footer .location .line {
+  width: 2px;
+  height: 80%;
+  background-color: #EDC951;
+}
+
+@media (max-width: 380px) {
+  .waveFooter {
+    display: none;
+  }
+
+  #footer {
+    height: auto;
+  }
+  #footer .location {
+    flex-direction: column;
+  }
+  #footer .location .socialNetworks {
+    width: 100%;
+    margin-top: 10%;
+  }
+  #footer .location .socialNetworks p {
+    font-size: 3.5rem;
+  }
+  #footer .location .socialNetworks div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .location .socialNetworks div img {
+    width: 10%;
+    margin: 5rem 0rem 5rem 0rem;
+  }
+  #footer .location .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #footer .location .items .contactItem {
+    margin: 5% 0% 8% 0%;
+    width: 100%;
+  }
+  #footer .location .items .contactItem img {
+    width: 8rem;
+  }
+  #footer .location .items .contactItem p {
+    font-size: 2.5rem;
+  }
+  #footer .location .items::before {
+    content: "";
+    width: 70%;
+    height: 2px;
+    background-color: #EDC951;
   }
 }
 * {
