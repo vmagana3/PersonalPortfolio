@@ -9,7 +9,5 @@ links.forEach((item) => {
       top: myTop - 200,
       behavior: "smooth",
     });
-    var clickedItem = item.parentNode;
-    clickedItem.style.backgroundColor = "red";
   });
 });
