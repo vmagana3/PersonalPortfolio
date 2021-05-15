@@ -6,10 +6,9 @@
         width: 80%;
         height: 55rem;
         margin: auto;
-        display: flex;
-        padding: 3rem 0rem 3rem 0rem;
+        display: flex;        
         flex-direction: column;
-        justify-content: space-between;                
+        justify-content: space-evenly;                        
         .schoolingCard{
             width: 100%;
             height: auto;            
@@ -21,20 +20,20 @@
             color: $white;
             .schoolingText{                
                 width: 70%;
-                padding: 3rem 0rem 3rem 0rem;
+                padding: 2rem 0rem 2rem 0rem;
                 .schoolName{
-                    font-size: 2.5rem;
+                    font-size: 2.2rem;
                     font-weight: 600;
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1rem;
                     width:60%;
                     border-bottom: 1px solid $bakerMillerPink;
                 }  
                 .degreeName{
-                    font-size: 1.7rem;
+                    font-size: 1.6rem;
                     font-weight: 500;
                 }   
                 li{
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     font-weight: 200;   
                     list-style: none;                                                       
                 }                                   

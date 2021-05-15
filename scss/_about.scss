@@ -1,10 +1,11 @@
+
 #AboutMe{
     width: 100%;
     height: auto;
     margin: 15rem 0rem 15rem 0rem;    
     .cardContent{
         width: 80%;
-        height: 40rem;
+        height: 43rem;
         margin: auto;
         border-radius: 1rem;
         display: flex;  
@@ -66,12 +67,8 @@
                 justify-content: space-around;
                 margin-top: 3rem;                                
                 img{
-                    width: 3.6rem;
-                }
-                img:hover{
-                    transform: rotate(10deg);                                        
-                    transition: 0.3s;
-                }
+                    width: 3.6rem;                   
+                }                
             }      
         }
     }

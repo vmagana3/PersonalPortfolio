@@ -3,7 +3,7 @@
     height: auto;      
     .contactForm{
         width: 60%;
-        height: 55rem;        
+        height: 45rem;        
         display: flex;
         margin: 10rem auto 10rem auto;                         
         .image{
@@ -40,12 +40,13 @@
             }  
             .inputContainer{
                 width: 80%;
+                height: 10%;
                 display: flex;
                 justify-content: space-around;
                 margin: auto;
                 padding: 0.5rem;                
                 border-radius: 0.6rem;
-                background-color: $white;
+                background-color: $white;                
                 img{                    
                     width: 7%;   
                     margin: 0.5rem;                                    

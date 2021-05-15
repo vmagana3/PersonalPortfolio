@@ -216,7 +216,7 @@
 }
 #AboutMe .cardContent {
   width: 80%;
-  height: 40rem;
+  height: 43rem;
   margin: auto;
   border-radius: 1rem;
   display: flex;
@@ -283,10 +283,6 @@
 #AboutMe .cardContent .rightContent div img {
   width: 3.6rem;
 }
-#AboutMe .cardContent .rightContent div img:hover {
-  transform: rotate(10deg);
-  transition: 0.3s;
-}
 
 @media (max-width: 380px) {
   #AboutMe .cardContent {
@@ -338,9 +334,8 @@
   height: 55rem;
   margin: auto;
   display: flex;
-  padding: 3rem 0rem 3rem 0rem;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #Schooling .schoolingContainer .schoolingCard {
   width: 100%;
@@ -354,21 +349,21 @@
 }
 #Schooling .schoolingContainer .schoolingCard .schoolingText {
   width: 70%;
-  padding: 3rem 0rem 3rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
 }
 #Schooling .schoolingContainer .schoolingCard .schoolingText .schoolName {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   width: 60%;
   border-bottom: 1px solid #ff96b2ff;
 }
 #Schooling .schoolingContainer .schoolingCard .schoolingText .degreeName {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 500;
 }
 #Schooling .schoolingContainer .schoolingCard .schoolingText li {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 200;
   list-style: none;
 }
@@ -430,7 +425,7 @@
 }
 #ContactMe .contactForm {
   width: 60%;
-  height: 55rem;
+  height: 45rem;
   display: flex;
   margin: 10rem auto 10rem auto;
 }
@@ -469,6 +464,7 @@
 }
 #ContactMe .contactForm .inputs .inputContainer {
   width: 80%;
+  height: 10%;
   display: flex;
   justify-content: space-around;
   margin: auto;
@@ -534,6 +530,20 @@
     font-size: 2.5rem;
   }
 }
+@keyframes moving {
+  30% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-8deg);
+  }
+  70% {
+    transform: rotate(6deg);
+  }
+  85% {
+    transform: rotate(-3deg);
+  }
+}
 .waveFooter img {
   transform: rotate(180deg);
   display: block;
@@ -568,6 +578,9 @@
 }
 #footer .location .socialNetworks div img {
   width: 15%;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
 }
 #footer .location .items {
   display: flex;

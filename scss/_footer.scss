@@ -1,3 +1,12 @@
+
+@keyframes moving{
+    30% {transform: rotate(10deg);}
+    50% {transform: rotate(-8deg);}
+    70% {transform: rotate(6deg);}
+    85% {transform: rotate(-3deg);}
+  }
+
+
 .waveFooter{
     img{
         transform: rotate(180deg);
@@ -29,8 +38,11 @@
                 justify-content: space-evenly;
                 margin-top: 5%;
                 img{
-                    width: 15%;
-                }
+                    width: 15%; 
+                    animation-name: moving;
+                    animation-iteration-count: infinite; 
+                    animation-duration: 2s;                                        
+                }                
             }
         }
 
@@ -49,7 +61,7 @@
                 p{
                     text-align: center;
                     font-size: 1.5rem;
-                    color: $white;
+                    color: $white;                    
                 }                   
             }
 
@@ -82,7 +94,7 @@
                     align-items: center;                                                       
                     img{
                         width: 10%;
-                        margin: 5rem 0rem 5rem 0rem;                        
+                        margin: 5rem 0rem 5rem 0rem;                                                                        
                     }
                 }
             }

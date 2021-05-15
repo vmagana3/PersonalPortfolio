@@ -1,11 +1,13 @@
 @import 'colors';
 //Desktop Styles//
+
+
 #MainSection{
     width: 100%;
     height: auto;    
     padding:9rem 0rem 9rem 0rem;
     background-color: $cobaltBlue;
-    #mainContainer{
+    #mainContainer{                        
         display: flex;        
         width: 90%;
         height: 100%;
