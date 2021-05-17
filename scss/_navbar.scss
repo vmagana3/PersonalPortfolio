@@ -27,23 +27,23 @@
         li{
             align-self: center;                          
             padding: 1rem;                            
-            a{
+            a{                               
                 font-size: 1.5rem;
                 text-decoration: none;
-                color: $white;                
+                color: $white;                              
             } 
         }   
                 
         li:hover{
             a{
                 color: $oxfordBlue;
+                cursor: pointer;
             }            
             background-color: $yellow;            
             transform: translate(5%);
             border-radius: 0.5rem;
-            transition: 1s;
-        }
-       
+            transition: 1s;            
+        }       
                                                
     } 
     span{
