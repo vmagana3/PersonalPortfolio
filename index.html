@@ -71,7 +71,7 @@
             <div class="rightContent">
                 <p class="pBold">Who I Am?</p>
                 <p>
-                    “I am Lover of web development and mobile apprentice developer, always ready to learn new things
+                    “I am Lover of Front-End development and mobile apprentice developer, always ready to learn new things
                      and technologies that help me expand my technical and
                      professional knowledge”
                 </p>
@@ -137,14 +137,14 @@
 
                 <div class="inputContainer">
                     <img src="./images/user.png" alt="">
-                    <input class="inputArea" type="text" placeholder="Your name here">
+                    <input id="nameInput" class="inputArea" type="text" placeholder="Your name here" name="name">
                 </div>  
                 <div class="inputContainer">
                     <img src="./images/emailForm.png" alt="">
-                    <input class="inputArea" type="text" placeholder="Your email here">
+                    <input id="emailInput" class="inputArea" type="text" placeholder="Your email here" name="email">
                 </div>                
                 <div class="inputContainer">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here!"></textarea>
+                    <textarea id="messageInput" class="inputArea" name="" cols="30" rows="10" placeholder="Write your message here!" name="message"></textarea>
                 </div>                       
                 <input class="btnSend" type="submit">
             </div>                        
@@ -193,4 +193,7 @@
 <script src="./js/ScrollScript.js"></script>
 <script src="./js/showHideTopButton.js"></script>
 <script src="./js/goTopScript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script src="./js/getDataForm.js"></script>
+<script src="./js/sendEmail.js"></script>
 </html>
