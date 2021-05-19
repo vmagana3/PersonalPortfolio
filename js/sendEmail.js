@@ -13,7 +13,15 @@ function getDataForm() {
     email: dataUser[1],
     message: dataUser[2],
   };
-  sendEmail(objData);
+  if (objData.name === "" || objData.email === "" || objData.message === "") {
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Please fill all inputs",
+    });
+  } else {
+    sendEmail(objData);
+  }
 }
 
 function sendEmail(data) {
@@ -25,7 +33,11 @@ function sendEmail(data) {
       personEmail: data.email,
       message: data.message,
     });
-    alert("Correo enviado correctamente");
+    Swal.fire({
+      icon: "success",
+      title: "Email Sent",
+      text: "Thaks for type me, i will contact you as son as possibble",
+    });
   } catch (error) {
     alert(error.message);
   }
