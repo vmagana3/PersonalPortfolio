@@ -681,6 +681,53 @@
     margin-left: 100%;
   }
 }
+@keyframes loading {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+#loadContainer {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #00162dff;
+  display: flex;
+  justify-content: center;
+}
+#loadContainer .loadAnimationdiv {
+  width: 30%;
+  height: 4%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#loadContainer .loadAnimationdiv .fillConatiner {
+  width: 100%;
+  height: 30%;
+  border-radius: 1rem;
+  background-color: #EDC951;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+#loadContainer .loadAnimationdiv p {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.hideLoadScreen {
+  transform: translateY(-100%);
+  display: none;
+  transition: all 1s;
+}
+
 * {
   margin: 0;
   padding: 0;
