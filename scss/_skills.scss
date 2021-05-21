@@ -1,0 +1,78 @@
+@mixin colorSkillBox($backColor,$percentaje) {
+    width: $percentaje; 
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: $backColor;    
+}
+
+#Skills{
+    width: 100%;
+    height: 500px;    
+    display: flex;
+    justify-content: space-evenly;        
+    margin-bottom: 10rem;
+    .leftSkills{
+        width: 70%;
+        height: auto;
+        padding: 5rem;                
+        .skillTitle{            
+            font-size: 2.5rem;                      
+        }
+        .skillContainer{
+            width: 100%;
+            display: flex;
+            margin-top: 2rem;                      
+            .skillName{
+                width: 15%;
+                font-size: 1.5rem;
+                font-weight: 300;                            
+            }
+
+            .html{
+                @include colorSkillBox(#E54C21,80%);                       
+            }
+
+            .css{
+                @include colorSkillBox(#1572b6,75%);                                      
+            }
+
+            .js{
+                @include colorSkillBox(#F0DA50,65%);
+            }
+            .Rnative{
+                @include colorSkillBox(#4FA5BE,65%)
+            }
+            .RDesign{
+                @include colorSkillBox(#42CA96,80%)                
+            }  
+            .git{
+                @include colorSkillBox(#f05133,65%)
+            }          
+        }
+    }    
+}
+
+.CV{
+    width: 100%;
+    height: auto;
+    margin-top: 4rem;    
+    button{
+        width: 15%;
+        height: 6rem;
+        display: block;
+        margin: auto;
+        border: none;           
+        font-size: 1.5rem;
+        font-weight: 600;
+        background-color: $oxfordBlue;
+        color: $white;
+        border-radius: 1rem;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+
+
+    
+            
+}
