@@ -70,9 +70,63 @@
     }
     button:hover{
         cursor: pointer;
-    }
+    }                
+}
 
 
+@media(max-width:380px){
+    #Skills{                              
+        margin-bottom: 5rem;        
+        .leftSkills{
+            width: 100%;
+            height: auto;
+            padding: 5rem;                           
+            .skillTitle{            
+                font-size: 5rem;                      
+            }
+            .skillContainer{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-top: 2rem;                      
+                .skillName{
+                    width: 100%;
+                    font-size: 3rem;
+                    font-weight: 300;                                              
+                }
     
-            
+                .html{
+                    @include colorSkillBox(#E54C21,80%);                       
+                }
+    
+                .css{
+                    @include colorSkillBox(#1572b6,75%);                                      
+                }
+    
+                .js{
+                    @include colorSkillBox(#F0DA50,65%);
+                }
+                .Rnative{
+                    @include colorSkillBox(#4FA5BE,65%)
+                }
+                .RDesign{
+                    @include colorSkillBox(#42CA96,80%)                
+                }  
+                .git{
+                    @include colorSkillBox(#f05133,65%)
+                }          
+            }
+        }    
+    }
+    
+    .CV{
+        width: 100%;
+        height: auto;
+        margin-top: 7rem;    
+        button{
+            width: 100%;
+            height: 10rem;                       
+            font-size: 3rem;            
+        }                       
+    }  
 }

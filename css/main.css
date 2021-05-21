@@ -811,6 +811,77 @@
   cursor: pointer;
 }
 
+@media (max-width: 380px) {
+  #Skills {
+    margin-bottom: 5rem;
+  }
+  #Skills .leftSkills {
+    width: 100%;
+    height: auto;
+    padding: 5rem;
+  }
+  #Skills .leftSkills .skillTitle {
+    font-size: 5rem;
+  }
+  #Skills .leftSkills .skillContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  #Skills .leftSkills .skillContainer .skillName {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  #Skills .leftSkills .skillContainer .html {
+    width: 80%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #E54C21;
+  }
+  #Skills .leftSkills .skillContainer .css {
+    width: 75%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #1572b6;
+  }
+  #Skills .leftSkills .skillContainer .js {
+    width: 65%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #F0DA50;
+  }
+  #Skills .leftSkills .skillContainer .Rnative {
+    width: 65%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #4FA5BE;
+  }
+  #Skills .leftSkills .skillContainer .RDesign {
+    width: 80%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #42CA96;
+  }
+  #Skills .leftSkills .skillContainer .git {
+    width: 65%;
+    height: 20px;
+    border-radius: 0.5rem;
+    background-color: #f05133;
+  }
+
+  .CV {
+    width: 100%;
+    height: auto;
+    margin-top: 7rem;
+  }
+  .CV button {
+    width: 100%;
+    height: 10rem;
+    font-size: 3rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
