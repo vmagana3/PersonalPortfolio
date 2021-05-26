@@ -1,0 +1,43 @@
+.embebedContainer{
+    width: 100%;
+    height:100vh;    
+    position: fixed;   
+    z-index: 1;    
+    top: 0;
+    left: 0;   
+    transform: translateY(-110%);  
+    transition: 1s;  
+    embed{
+        width: 100%;
+        height: 100%;
+    }
+    button{
+        width: 7%;
+        height: 5%;
+        border: none;
+        border-radius: 0.5rem;
+        position: absolute;           
+        margin-top: 10rem; 
+        margin-left: 90%;         
+        cursor: pointer;  
+        font-size: 1.5rem;
+        background-color: red; 
+        color: $white;       
+    }   
+}
+
+@media(max-width:380px){    
+    .embebedContainer{
+        button{
+            width: 90%;
+            margin-left: 3%;
+            margin-top: 170%;  
+            font-size: 2.5rem;          
+        }                       
+    }
+}
+
+.showContainer{
+    transform: translateY(0%);
+    transition: 1s;
+}
