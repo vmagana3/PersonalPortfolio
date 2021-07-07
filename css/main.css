@@ -421,6 +421,9 @@
     list-style: none;
     text-align: center;
   }
+  #Schooling .schoolingContainer .schoolingCard .schoolingText button {
+    font-size: 3rem;
+  }
   #Schooling .schoolingContainer .schoolingCard .schoolingImage {
     width: 100%;
     display: flex;
@@ -853,6 +856,9 @@
     width: 100%;
     height: 10rem;
     font-size: 3rem;
+  }
+  .CV button img {
+    width: 10%;
   }
 }
 .embebedContainer {
