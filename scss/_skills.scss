@@ -59,14 +59,19 @@
     button{
         width: 15%;
         height: 6rem;
-        display: block;
-        margin: auto;
+        display: flex;  
+        justify-content: space-evenly;
+        align-items: center;     
+        margin: auto; 
         border: none;           
         font-size: 1.5rem;
         font-weight: 600;
         background-color: $oxfordBlue;
         color: $white;
         border-radius: 1rem;
+        img{
+            width: 20%;
+        }
     }
     button:hover{
         cursor: pointer;

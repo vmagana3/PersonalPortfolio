@@ -36,7 +36,17 @@
                     font-size: 1.4rem;
                     font-weight: 200;   
                     list-style: none;                                                       
-                }                                   
+                }  
+                button{                    
+                    border: none;
+                    color: white;
+                    border-bottom: 1px solid white;
+                    background-color: transparent;                    
+                    font-size: 1.5rem;                    
+                }   
+                button:hover{
+                    cursor: pointer;
+                }                              
             }
             .schoolingImage{
                 width: 20%;      
