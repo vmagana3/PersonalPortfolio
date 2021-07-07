@@ -643,9 +643,10 @@
     flex-direction: column;
     align-items: center;
   }
-  #footer .location .socialNetworks div img {
-    width: 10%;
-    margin: 5rem 0rem 5rem 0rem;
+  #footer .location .socialNetworks div a {
+    margin: 8% 0% 3% 0%;
+    display: flex;
+    justify-content: center;
   }
   #footer .location .items {
     display: flex;
